@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WHILE Interpreter</title>
+        <link rel="stylesheet" href="main.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="title"><h1>WHILE Interpreter</h1>
+    </div>
+        <div id="splitLeftText" class="notVisible">
+            <textarea id="text" wrap="off">test</textarea>
+            <div class="btn-group">
+                <button id="commit" type="button">commit</button>
+            </div>
+        </div>
+        <div id="splitLeftMain" class="visible">
+            <ul id="main"></ul>
+            <div class="btn-group">
+                <button id="jump back" type="button" pressed="false">&lt;&lt;</button>
+                <button id="back" type="button">&lt;</button>
+                <button id="stop" type="button">||</button>
+                <button id="step" type="button">&gt;</button>
+                <button id="jump" type="button" pressed="false">&gt;&gt;</button>
+                <button id="edit" type="button">edit</button>
+            </div>
+        </div>
+        <div id="splitRight">
+            <ul id="memory"></ul>
+            <div id="comment"><h3>Click on a line to set a breakpoint.</h3><h3>Click again to reset it.</h3></div>
+        </div>
+        </div>
+        <script src='./final.js'></script>
+    </body>
+</html>
